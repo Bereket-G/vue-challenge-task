@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>
+        Restaurant Manager
+    </title>
+</head>
+<body style="padding: 25px;">
+<div id="app">
+
+    <h2>Restaurant Manager</h2>
+    <br/>
+
+    <x-restaurant ref="restaurantComponent"></x-restaurant>
+
+    <div style="">
+        <form class="new-party-form">
+
+            <h2> New Party </h2>
+            <span style="font-size: 18px"> Fill the following form to allocate a table to a party that is waiting to be seated. </span>
+            <br/><br/>
+
+            <input class="input" type="text" placeholder="Number of people" v-model="new_party_form.occupants"/>
+            <input class="input" type="text" placeholder="Duration of stay" v-model="new_party_form.occupied_duration"/>
+            <input class="input" type="text" placeholder="Fuss message" v-model="new_party_form.fuss_message"/>
+
+            <input @click="submitNewPartyForm" class="button" type="button" value="Add" style="float: right"/>
+        </form>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="restaurant/table/table.js"></script>
+<script src="restaurant/restaurant.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

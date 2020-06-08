@@ -1,0 +1,63 @@
+* {
+    font-family: 'Roboto';
+}
+
+#app {
+    width: 90%;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.restaurant {
+    height: 323px;
+    border: red;
+    border-style: groove;
+    padding: 28px;
+    margin: 7px;
+    display: block;
+    width: 965px;
+}
+
+.table {
+    float: left;
+    border: #d6c7eb;
+    border-style: groove;
+    padding: 10px;
+    margin: 7px;
+    width: 200px;
+    height: 120px;
+}
+
+.new-party-form {
+    margin: auto;
+    padding: 30px;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.button {
+    width: 75px;
+    background-color: #e8e8e8;
+    border: none;
+    padding-bottom: 7px;
+    text-align: center;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.evict-btn {
+    background-color: #e2c1e8;
+}
+
+.available {
+    background-color: #faf4fb;
+}
